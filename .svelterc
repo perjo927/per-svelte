@@ -1,5 +1,0 @@
-compilerOptions: {
-  skipIntroByDefault: true,
-  nestedTransitions: true,
-  css: false
-}

@@ -1,11 +1,9 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
-
----
-
 # Per's Project
 
-
 ## Getting Started
+
+Built on [svelte](https://svelte.technology).
+Supports [pnpm](https://pnpm.js.org)
 
 ### Install
 
@@ -26,15 +24,13 @@ npm run start
 npm run build
 ```
 
-#### TODO
-For production :
+### Watch
 
 ```bash
-npm run build:prod
+npm run build:watch
 ```
 
-Navigate to [localhost:1234](http://localhost:1234).
-
+Navigate to [localhost:5000](http://localhost:5000).
 
 ## Deploying to the web
 
