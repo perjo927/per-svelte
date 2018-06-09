@@ -1,0 +1,40 @@
+<div class="container">
+	<h1>{name}</h1>
+	<h2>{title}</h2>
+	<h3>{subTitle}</h3>
+	<h4>Learn More V</h4>
+</div>
+
+<style>
+		  
+	:global(header) {
+		min-height: 100vh;
+		display: grid;
+		align-items: center;
+	}
+	h1, h2, h3, h4 {
+		text-align: center;
+		white-space: nowrap;	
+		line-height: 0.5em;
+	}
+	h1, h2 {
+		color: #f1f1f1;			
+		animation-name: deeper;
+		animation-duration: 5s;
+		animation-fill-mode: forwards;
+	}
+	h1 {
+		font-family: "Bungee Outline", cursive;
+		filter: drop-shadow(-7px 7px 11px #aaa);
+		transition: all 0.2s;
+		font-size: 8vw;
+	}
+	h2 {
+		filter: drop-shadow(-6px 6px 10px #aaa);
+		font-size: 4.6vw;		
+	}
+	h3 {
+		font-family: "Share Tech Mono", cursive;
+		font-size: 3vw;				
+	}
+</style>	
