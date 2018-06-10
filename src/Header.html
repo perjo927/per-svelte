@@ -1,52 +1,58 @@
-<div class="container">
+<div>
 	<h1>{name}</h1>
 	<h2>{title}</h2>
 	<h3>{subTitle}</h3>
-	<h4>Learn More V</h4>
+	<div class="center">
+		<a>Get to Know Per</a>
+	</div>	
 </div>
 
 <style>
-		  
 	:global(header) {
 		min-height: 100vh;
 		display: grid;
 		align-items: center;
 	}
-	h1, h2, h3, h4 {
-		text-align: center;
-		white-space: nowrap;
+	h1, h2, h3 {
+		transition: all 0.2s;		
 	}
 	h1, h2 {
 		line-height: 0.5em;					
 		animation-name: intro;
 		animation-duration: 5s;
 		animation-fill-mode: forwards;
+		/* TODO: theme toggle */			
+		mix-blend-mode: color-burn;		
+		mix-blend-mode: difference;
 	}
 	h1 {
-		font-family: "Bungee Shade", cursive;
-		filter: drop-shadow(0 0 2em hsla(320, 100%, 50%, 1));
-		filter: drop-shadow(0 0 2em hsla(180, 75%, 50%, 1));
-		transition: all 0.2s;
+		filter: var(--drop-shadow);
 		font-size: 8vw;
-		/* TODO: toggle */
-		mix-blend-mode: color-burn;		
-		mix-blend-mode: difference;
 	}
 	h2 {
-		font-family: "Bungee Outline", cursive;
-		
 		font-size: 5.4vw;	
-		/* TODO: toggle */			
-		mix-blend-mode: color-burn;		
-		mix-blend-mode: difference;
 	}
 	h3 {
 		line-height: 1em;		
-		font-size: 3vw;				
-		mix-blend-mode: difference;
+		font-size: 3vw;			
+		color: rebeccapurple;	
 		mix-blend-mode: color-burn;
 		/* font-family:serif; */
 		letter-spacing: 0.25em;
-
+	}
+	
+	a {		
+		padding: 0 0.5em;		
+		background: indianred;
+		border-radius: 1em;
+		mix-blend-mode: color-burn;		
+		mix-blend-mode: difference;
+		font-size: 2vw;
+	}
+	a:hover {
+		background: orangered;
+	}
+	a:visited {
+		background: mediumvioletred;
 	}
 </style>	

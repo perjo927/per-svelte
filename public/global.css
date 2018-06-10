@@ -5,7 +5,25 @@
 
 :root {
 	--text-shadow: 0px 1px 3px #bbb, 0px 2px 2px #aaa, 0px 3px 1px #999, 0px 4px 0px #888, 0px 5px 0px #777, 0px 6px 0px #666, 0px 7px 0px #555, 0px 9px 5px #444, 0px 10px 20px #555; 
+	--bg-white-url: url("w1.png");
+	--bg-blue-url: url("w1.png");
+	--bg-pink-url: url("p1.png");
+	--linear-gradient-blue-to-black: linear-gradient(hsla(180, 75%, 50%, 1), black);
+	--linear-gradient-pink-to-black: linear-gradient(hsla(320, 100%, 50%, 1), black);
+	--linear-gradient-circle-blue-to-black: radial-gradient(circle, hsl(180, 100%, 90%), hsl(180, 100%, 50%), black);
+	--linear-gradient-circle-pink-to-black: radial-gradient(circle, hsla(300, 100%, 85%, 1),  hsla(320, 100%, 50%, 1), black);
+	--linear-gradient-circle-pink: radial-gradient(circle, hsla(300, 100%, 80%, 1), hsla(320, 100%, 50%, 1), hsla(315, 100%, 50%, 1));
+	--filter-1: hue-rotate(120deg) blur(0.4px) grayscale(50%) opacity(75%) saturate(1) sepia(10%);
+	--primary-font-size: 18px;
+	--primary-font-family: "Bungee Inline", cursive;
+	--secondary-font-family: "Bungee Outline", cursive;
+	--tertiary-font-family: "Bungee Shade", cursive;
+	--quartiary-font-family: sans-serif;
+	--quintiary-font-family: serif;
+	--primary-color: hsl(0, 0%, 10%);	
+	--drop-shadow: drop-shadow(0 0 2em hsla(180, 75%, 50%, 1))
 }
+
 @keyframes intro {
 	0% {
 		text-shadow: 0px 1px 2px #111;
@@ -19,12 +37,11 @@
 
 html {
 	/* TOD: toggle */
-	background: linear-gradient(hsla(180, 75%, 50%, 1), black);
-	background: linear-gradient(hsla(320, 100%, 50%, 1), black);
-	background: radial-gradient(circle, hsl(180, 100%, 90%), hsl(180, 100%, 50%), black);
-	background: radial-gradient(circle, hsla(300, 100%, 85%, 1),  hsla(320, 100%, 50%, 1), black);
-	background: radial-gradient(circle, hsla(300, 100%, 80%, 1), hsla(320, 100%, 50%, 1), hsla(315, 100%, 50%, 1));
-	
+	background: var(--linear-gradient-blue-to-black);
+	background: var(--linear-gradient-circle-pink-to-black);
+	background: var(--linear-gradient-circle-blue-to-black);
+	background: var(--linear-gradient-circle-pink-to-black);
+	background: var(--linear-gradient-circle-pink);
 }
 
 html, body {
@@ -35,18 +52,27 @@ html, body {
 body {
 	margin: 0;
 	box-sizing: border-box;
-	font: 18px "Bungee Inline", cursive;
-	color: hsl(0, 0%, 30%);	
-	background-image: url("b1.png");	
+	font-size: var(--primary-font-size);
+	font-family: var(--primary-font-family);	
+	color: var(--primary-color);	
+	background-image: var(--bg-blue-url);
 	background-repeat: repeat;	
-	
-	/* TODO: toggle */
-	filter: hue-rotate(120deg) 
-			blur(0.4px) 
-			grayscale(50%) 
-			opacity(75%) 
-			saturate(1)
-			sepia(10%);    
+	/* TODO: theme toggle */
+	filter: var(--filter-1);    
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+	white-space: nowrap;
+}
+
+h1 {
+	/* TODO: theme toggle primary */	
+	font-family: var(--tertiary-font-family);
+}
+h2 {
+	/* TODO: theme toggle primary  */	
+	font-family: var(--secondary-font-family);
 }
 
 a {
@@ -54,12 +80,9 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	cursor: pointer;
 }
 
-a:visited {
-}
-
-.container {
-
+.center {
+	text-align: center;
 }
