@@ -5,7 +5,7 @@ import Social from './Social.html';
 const data = {
 	name: 'Per Jonsson',
 	title: "Front-end Developer",
-	subTitle: "Does Front-End Things"
+	subTitle: "I Can Haz Front-End Skills"
 };
 
 

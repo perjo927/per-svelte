@@ -14,27 +14,39 @@
 	}
 	h1, h2, h3, h4 {
 		text-align: center;
-		white-space: nowrap;	
-		line-height: 0.5em;
+		white-space: nowrap;
 	}
 	h1, h2 {
-		color: #f1f1f1;			
-		animation-name: deeper;
+		line-height: 0.5em;					
+		animation-name: intro;
 		animation-duration: 5s;
 		animation-fill-mode: forwards;
 	}
 	h1 {
-		font-family: "Bungee Outline", cursive;
-		filter: drop-shadow(-7px 7px 11px #aaa);
+		font-family: "Bungee Shade", cursive;
+		filter: drop-shadow(0 0 2em hsla(320, 100%, 50%, 1));
+		filter: drop-shadow(0 0 2em hsla(180, 75%, 50%, 1));
 		transition: all 0.2s;
 		font-size: 8vw;
+		/* TODO: toggle */
+		mix-blend-mode: color-burn;		
+		mix-blend-mode: difference;
 	}
 	h2 {
-		filter: drop-shadow(-6px 6px 10px #aaa);
-		font-size: 4.6vw;		
+		font-family: "Bungee Outline", cursive;
+		
+		font-size: 5.4vw;	
+		/* TODO: toggle */			
+		mix-blend-mode: color-burn;		
+		mix-blend-mode: difference;
 	}
 	h3 {
-		font-family: "Share Tech Mono", cursive;
+		line-height: 1em;		
 		font-size: 3vw;				
+		mix-blend-mode: difference;
+		mix-blend-mode: color-burn;
+		/* font-family:serif; */
+		letter-spacing: 0.25em;
+
 	}
 </style>	
