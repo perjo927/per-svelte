@@ -11,11 +11,23 @@ const data = {
 
 export const header = new Header({
 	target: document.querySelector('header'),
-	data: data
+	data: {
+		...data,
+		next: ".social"
+	}
 });
 
 export const social = new Social({
 	target: document.querySelector('section.social'),
-	data: {}
+	data: {		
+		github: "",
+		linkedin: "",		
+		mail: "",
+		medium: "",	
+		phone: "",	
+		twitter: "",
+		wordpress: "",
+		visible: false
+	}
 });
 
