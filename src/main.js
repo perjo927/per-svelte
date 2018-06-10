@@ -8,15 +8,36 @@ const headerData = {
 	subTitle: "I Can Haz Front-End Skills"
 };
 
-const socialData = {		
-	github: "",
-	linkedin: "",		
-	mail: "",
-	medium: "",	
-	phone: "",	
-	twitter: "",
-	wordpress: ""
-}
+const socialData = [		
+	{
+		name: "GitHub",
+		link: ""
+	},
+	{
+		name: "LinkedIn",
+		link: ""
+	},
+	{
+		name: "E-Mail",
+		link: ""
+	},
+	{
+		name: "Medium",
+		link: ""
+	},
+	{
+		name: "Phone",
+		link: ""
+	},
+	{
+		name: "Twitter",
+		link: ""
+	},
+	{
+		name: "Wordpress",
+		link: ""
+	}	
+];
 
 export const header = new Header({
 	target: document.querySelector('header'),
@@ -28,8 +49,8 @@ export const header = new Header({
 
 export const social = new Social({
 	target: document.querySelector('section.social'),
-	data: {		
-		...socialData,
+	data: {
+		socialData,
 		next: null
 	}
 });
