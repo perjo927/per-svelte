@@ -11,32 +11,46 @@ const headerData = {
 const socialData = [		
 	{
 		name: "GitHub",
-		link: ""
+		link: "",
+		profile: "perjo927",		
+		meta: "fab fa-github"
 	},
 	{
 		name: "LinkedIn",
-		link: ""
+		link: "",
+		profile: "djpjgj",
+		meta: "fab fa-linkedin"
 	},
 	{
 		name: "E-Mail",
-		link: ""
-	},
-	{
-		name: "Medium",
-		link: ""
+		link: "",
+		profile: "djpjgj",
+		meta: "far fa-envelope"
 	},
 	{
 		name: "Phone",
-		link: ""
+		link: "",
+		profile: "073 - ASK ME",
+		meta: "fas fa-phone"
 	},
 	{
 		name: "Twitter",
-		link: ""
+		link: "",
+		profile: "programmerper",
+		meta: "fab fa-twitter"
 	},
 	{
 		name: "Wordpress",
-		link: ""
-	}	
+		link: "",
+		profile: "programmerper",
+		meta: "fab fa-wordpress"
+	},
+	{
+		name: "Medium",
+		link: "",
+		profile: "programmerper",
+		meta: "fab fa-medium"
+	}
 ];
 
 export const header = new Header({

@@ -5,6 +5,8 @@
 
 :root {
 	--text-shadow: 0px 1px 3px #bbb, 0px 2px 2px #aaa, 0px 3px 1px #999, 0px 4px 0px #888, 0px 5px 0px #777, 0px 6px 0px #666, 0px 7px 0px #555, 0px 9px 5px #444, 0px 10px 20px #555; 
+	--text-shadow-s: 0px 1px 3px #bbb, 0px 2px 2px #aaa, 0px 3px 1px #999, 0px 4px 0px #888, 0px 5px 0px #777, 0px 6px 0px #333; 	
+	--text-shadow-xs: 0px 1px 3px #bbb, 0px 2px 2px #333; 		
 	--bg-white-url: url("w1.png");
 	--bg-blue-url: url("w1.png");
 	--bg-pink-url: url("p1.png");
