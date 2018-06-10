@@ -1,9 +1,24 @@
-{#if visible}
-    <h4>Social</h4>
-{/if}
+<h3>Social</h3>
+<h4>Such Social. Much contact.</h4>
 
 <style>
     :global(.social) {
 	    min-height: 100vh;
+    }
+    h3, h4 {
+        line-height: 0.5em;
+    }
+    h3 {              
+        font-size: 4vw;    
+        font-family: var(--primary-font-family);
+        text-shadow: var(--text-shadow);
+        mix-blend-mode: difference;
+        mix-blend-mode: exclusion;		        
+		filter: var(--drop-shadow);        
+    }
+    h4 {        
+        font-size: 3vw;            
+		color: rebeccapurple;        
+        mix-blend-mode: color-burn;
     }
 </style>	

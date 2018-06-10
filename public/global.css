@@ -74,12 +74,23 @@ h1, h2, h3, h4 {
 	text-align: center;
 	white-space: nowrap;
 }
-
+h1, h2 {
+	line-height: 0.5em;					
+	animation-name: intro;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+	/* TODO: theme toggle */			
+	mix-blend-mode: color-burn;		
+	mix-blend-mode: difference;
+}
 h1 {
 	/* TODO: theme toggle primary */	
 	font-family: var(--tertiary-font-family);
+	filter: var(--drop-shadow);
+	font-size: 8vw;
 }
 h2 {
+	font-size: 5.4vw;	
 	/* TODO: theme toggle primary  */	
 	font-family: var(--secondary-font-family);
 }
