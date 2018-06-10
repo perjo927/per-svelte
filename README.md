@@ -1,40 +1,36 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# Per's Project
 
----
+## Getting Started
 
-# svelte app
+Built on [svelte](https://svelte.technology).
+Supports [pnpm](https://pnpm.js.org)
 
-This is a project template for [Svelte](https://svelte.technology) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npm install -g degit # you only need to do this once
-
-degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-
-## Get started
-
-Install the dependencies...
+### Install
 
 ```bash
-cd svelte-app
+cd pers-project
 npm install
 ```
 
-...then start [Rollup](https://rollupjs.org):
+### Develop
 
 ```bash
-npm run dev
+npm run start
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+### Build
 
+```bash
+npm run build
+```
+
+### Watch
+
+```bash
+npm run build:watch
+```
+
+Navigate to [localhost:5000](http://localhost:5000).
 
 ## Deploying to the web
 
@@ -50,21 +46,4 @@ Then, from within your project folder:
 
 ```bash
 now
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public
 ```
