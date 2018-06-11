@@ -1,5 +1,5 @@
 <h3>Skills</h3>
-<h4>Do you even code?</h4>
+<h4>Do I even code?</h4>
 
 <ul>
     {#each skillsData as s}
@@ -45,12 +45,11 @@
     }
     h4 {        
         line-height: 1em;           
-        font-size: 5vw;            
+        font-size: 4.5vw;            
 		color: rebeccapurple;        
         mix-blend-mode: color-burn;
     }
     ul {
-        margin-top: 3em;
         display: grid;
         grid-template-columns: 20% 20% 20% 20%;
         grid-gap: 2em;
@@ -82,15 +81,16 @@
     p {
         font-family: var(--quartiary-font-family);
         line-height: 0;
-        font-size: 3.5vw;
+        font-size: 3vw;
         font-weight: bold;
         text-shadow: var(--text-shadow-xxs);
-        mix-blend-mode: color-burn;
+        mix-blend-mode: multiply;
         color: hsl(0, 0%, 100%);
+        filter: drop-shadow(0px 0px 0.3em rebeccapurple);
     }
     span {
         font-family: var(--quartiary-font-family);
-        font-size: 9.5vw;
+        font-size: 8.5vw;
         font-weight: bold;
         mix-blend-mode: luminosity;
         text-shadow: var(--text-shadow)

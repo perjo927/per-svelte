@@ -77,15 +77,64 @@ export const skillsData = [
 	},
 	{
 		name: "TypeScript",
-		rate: "😃"
+		rate: "😍"
 
 	},
 	{
 		name: "HTML",
-		rate: "😃"
+		rate: "😆"
 	},
 	{
 		name: "CSS",
+		rate: "😁"
+	},
+	{
+		name: "React",
+		rate: "😊"
+	},
+	{
+		name: "Angular",
 		rate: "😃"
+	},
+	{
+		name: "C#",
+		rate: "😎"
+	},
+	{
+		name: ".NET",
+		rate: "😳"
+	},
+	{
+		name: "Python",
+		rate: "😇"
+	},
+	{
+		name: "Ruby",
+		rate: "😏"
+	},
+	{
+		name: "Java",
+		rate: "😔"
+	},
+	{
+		name: "C++",
+		rate: "😟"
+	},
+	{
+		name: "C",
+		rate: "😛"
+	},
+
+	{
+		name: "PHP",
+		rate: "😒"
+	},
+	{
+		name: "SQL",
+		rate: "😞"
+	},
+	{
+		name: "Assembly",
+		rate: "😠"
 	}
 ];
