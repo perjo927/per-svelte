@@ -1,3 +1,68 @@
-<!-- TODO -->
-Sammanfatta keep.google.com och cv2018 på ett slagkraftigt sätt
-kolla oussa
+<h3>About</h3>
+<h4>Me. Myself. I.</h4>
+<p>
+{aboutData}
+</p>
+
+<div class="center">
+    <a on:click='next()'>Find out More</a>
+</div>	
+
+<script>
+    import next from "./utils.js"
+
+    export default {
+        methods: {
+            next: next
+        },
+    };
+</script>
+
+<style>
+    :global(.about) {
+        min-height: 100vh;
+    }
+    h3, h4 {
+        line-height: 0.5em;
+    }
+    h3 {              
+        font-size: 4vw;    
+        font-family: var(--primary-font-family);
+        text-shadow: var(--text-shadow);
+        mix-blend-mode: difference;
+        mix-blend-mode: exclusion;		        
+        filter: var(--drop-shadow);        
+    }
+    h4 {        
+        font-size: 3vw;            
+        color: rebeccapurple;        
+        mix-blend-mode: color-burn;
+    }
+    .center {
+        margin: 2em;
+    }
+    a {		
+		padding: 0 0.5em;		
+		background: indianred;
+		border-radius: 1em;
+		mix-blend-mode: color-burn;		
+		mix-blend-mode: difference;
+		font-size: 2vw;
+	}
+	a:hover {
+		background: orangered;
+	}
+	a:visited {
+		background: mediumvioletred;
+	}
+    
+    p {
+        color: black;
+        font-family: var(--quartiary-font-family);
+        filter: drop-shadow(0px 0px 1em rebeccapurple);      
+        font-size: 2.5vw;
+        font-weight: bold;
+        mix-blend-mode: color-burn;
+        margin: 5vw 10vw 5vw 10vw;
+    }
+</style>	

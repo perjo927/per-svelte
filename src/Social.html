@@ -5,7 +5,7 @@
     {#each socialData as s}
         <li>
             <div>
-                <a target="_blank" href={TODO}>
+                <a class="profile" target="_blank" href={s.link}>
                     <i class="{s.meta}"></i>
                 </a>
                 <span>{s.profile}</span>
@@ -14,8 +14,18 @@
     {/each}
 </ul>
 
-<script>
+<div class="center">
+    <a on:click='next()'>Find out More</a>
+</div>	
 
+<script>
+    import next from "./utils.js"
+
+    export default {
+        methods: {
+            next: next
+        },
+    };
 </script>
 
 <style>
@@ -39,19 +49,41 @@
         mix-blend-mode: color-burn;
     }
     ul {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 1.5em;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 1em;
     }
     li {
         list-style-type: none;    
-        max-width: 6.5vw;   
+        flex-grow: 1;
+        width: 30%;
     }     
     li div {
         display: flex;
         flex-direction: column;
         align-items: center;
     }   
+    a.profile {
+        line-height: 4em;
+    }
+    .center {
+        margin: 2em;
+    }
+    .center a {		
+		padding: 0 0.5em;		
+		background: indianred;
+		border-radius: 1em;
+		mix-blend-mode: color-burn;		
+		mix-blend-mode: difference;
+		font-size: 2vw;
+	}
+	.center  a:hover {
+		background: orangered;
+	}
+	.center a:visited {
+		background: mediumvioletred;
+	}
     i {
         font-size: 6.5vw;     
         text-shadow: var(--text-shadow);
