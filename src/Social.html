@@ -1,7 +1,106 @@
-<h4>Social</h4>
+<h3>Social</h3>
+<h4>Such Social. Much contact.</h4>
+
+<ul>
+    {#each socialData as s}
+        <li>
+            <div>
+                <a class="profile" target="_blank" href={s.link}>
+                    <i class="{s.meta}"></i>
+                </a>
+                <span>{s.profile}</span>
+            </div>
+        </li>
+    {/each}
+</ul>
+
+<div class="center">
+    <a on:click='next()'>Find out More</a>
+</div>	
+
+<script>
+    import next from "./utils.js"
+
+    export default {
+        methods: {
+            next: next
+        },
+    };
+</script>
 
 <style>
     :global(.social) {
-        display: none;
+	    min-height: 100vh;
+    }
+    h3 {           
+        line-height: 0;   
+        font-size: 11vw;    
+        font-family: var(--primary-font-family);
+        text-shadow: var(--text-shadow);
+        mix-blend-mode: difference;
+        mix-blend-mode: exclusion;		        
+		filter: var(--drop-shadow);        
+    }
+    h4 {        
+        line-height: 1em;           
+        font-size: 5vw;            
+		color: rebeccapurple;        
+        mix-blend-mode: color-burn;
+    }
+    ul {
+        margin-top: 3em;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 2em;
+    }
+    li {
+        list-style-type: none;    
+        flex-grow: 1;
+        width: 30%;
+    }     
+    li div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    a.profile {
+        line-height: 3.5em;
+    }
+    .center {
+        margin: 3.5em;
+    }
+    .center a {		
+		padding: 0.5em 1em;		
+		background: indianred;
+		border-radius: 1.5em;
+		mix-blend-mode: difference;
+		font-size: 3vw;
+	}
+	.center a:hover {
+		background: orangered;
+	}
+	.center a:visited {
+		background: mediumvioletred;
+	}
+    i {
+        font-size: 8vw;     
+        text-shadow: var(--text-shadow);
+        color: hsl(0, 0%, 100%);
+    }
+    i:hover{
+        transition: all 0.2s;
+        text-shadow: var(--text-shadow-xxs);
+    }
+    i:active{        
+        text-shadow: var(--text-shadow-xs);
+    }
+    span {
+        font-family: var(--quartiary-font-family);
+        font-size: 2.5vw;
+        font-weight: bold;
+        color: hsl(0, 0%, 100%);        
+        mix-blend-mode: multiply;
+        text-shadow: var(--text-shadow-xxs);
+        
     }
 </style>	
