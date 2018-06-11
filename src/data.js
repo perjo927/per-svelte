@@ -106,11 +106,11 @@ export const skillsData = [
 	},
 	{
 		name: "Python",
-		rate: "😇"
+		rate: "😏"
 	},
 	{
 		name: "Ruby",
-		rate: "😏"
+		rate: "😐"
 	},
 	{
 		name: "Java",
@@ -137,4 +137,52 @@ export const skillsData = [
 		name: "Assembly",
 		rate: "😠"
 	}
+];
+
+export const workData = [		
+	{
+		name: "NetEnt",
+		link: "https://www.netent.com",
+		logo: "netent.png",
+		role: "Front-End Developer"
+	},
+	{
+		name: "Betsson",
+		link: "http://www.betssongroup.com",
+		logo: "betsson.png",
+		role: "Web Developer"		
+	},
+	{
+		name: "Ericsson",
+		link: "https://www.ericsson.com",
+		logo: "ericsson.png",
+		role: "Developer"		
+	},
+	{
+		name: "Linköping University",
+		link: "https://www.liu.se",
+		logo: "liu.png",
+		role: "Lab Assistant"		
+	}
+];
+
+export const educationData = [		
+	{
+		name: "Linköping University",
+		link: "https://www.liu.se",
+		logo: "liu.png",
+		role: "Innovative Programming"
+	},
+	{
+		name: "Linköping University",
+		link: "https://www.liu.se",
+		logo: "liu.png",
+		role: "Music Production"
+	},
+	{
+		name: "Linköping University",
+		link: "https://www.liu.se",
+		logo: "liu.png",
+		role: "Media & Communication"
+	},
 ];
