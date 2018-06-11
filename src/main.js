@@ -1,8 +1,9 @@
 import Header from './Header.html';
 import About from './About.html';
 import Social from './Social.html';
+import Skills from './Skills.html';
 
-import { aboutData, headerData, socialData } from './data.js'
+import { aboutData, headerData, socialData, skillsData } from './data.js'
 
 export const header = new Header({
 	target: document.querySelector('header'),
@@ -25,5 +26,13 @@ export const social = new Social({
 	data: {
 		socialData,
 		next: ".skills"
+	}
+});
+
+export const skills = new Skills({
+	target: document.querySelector('section.skills'),
+	data: {
+		skillsData,
+		next: ".work"
 	}
 });
