@@ -1,11 +1,11 @@
 <h3>Work</h3>
-<h4>All my work is belong to me.</h4>
+<h4>Working on it.</h4>
 
 <ul>
     {#each workData as w}
         <li>
             <div>
-                <a class="profile" target="_blank" href={w.link}>
+                <a class="company" target="_blank" href={w.link}>
                     <picture>                    
                         <img src="{w.logo}" alt="{w.name}"/>
                     </picture>
@@ -64,7 +64,7 @@
         flex-direction: column;
         align-items: center;
     }   
-    a.profile {
+    .company {
         line-height: 3.5em;
     }
     .center {
@@ -84,7 +84,7 @@
 		background: mediumvioletred;
     }
     img {
-        border-radius: 0.3em;
+        border-radius: 50%;
         max-width: 25vw;        
         box-shadow: -3px 7px 14px 0px black;
     }

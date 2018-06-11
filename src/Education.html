@@ -1,14 +1,16 @@
-<h3>Social</h3>
-<h4>Such Social. Much contact.</h4>
+<h3>Education</h3>
+<h4>All my studies is belong to me.</h4>
 
 <ul>
-    {#each socialData as s}
+    {#each educationData as e}
         <li>
             <div>
-                <a class="profile" target="_blank" href={s.link}>
-                    <i class="{s.icon}"></i>
+                <a class="place" target="_blank" href={e.link}>
+                    <picture>                    
+                        <img src="{e.logo}" alt="{e.name}"/>
+                    </picture>
                 </a>
-                <span>{s.profile}</span>
+                <span>{e.info}</span>
             </div>
         </li>
     {/each}
@@ -29,7 +31,7 @@
 </script>
 
 <style>
-    :global(.social) {
+    :global(.education) {
 	    min-height: 100vh;
     }
     h3 {           
@@ -43,13 +45,13 @@
     }
     h4 {        
         line-height: 1em;           
-        font-size: 5vw;            
+        font-size: 4vw;            
 		color: rebeccapurple;        
         mix-blend-mode: color-burn;
     }
     ul {        
         display: grid;        
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 45% 45%;
         grid-gap: 2em;
         justify-items: center;
         margin: 3em 1em 1em 1em;
@@ -62,7 +64,7 @@
         flex-direction: column;
         align-items: center;
     }   
-    .profile {
+    .place {
         line-height: 3.5em;
     }
     .center {
@@ -80,26 +82,25 @@
 	}
 	.center a:visited {
 		background: mediumvioletred;
-	}
-    i {
-        font-size: 8vw;     
-        text-shadow: var(--text-shadow);
-        color: hsl(0, 0%, 100%);
     }
-    i:hover{
+    img {
+        border-radius: 50%;
+        max-width: 25vw;        
+        box-shadow: -3px 7px 14px 0px black;
+    }
+    img:hover{
         transition: all 0.2s;
-        text-shadow: var(--text-shadow-xxs);
+        box-shadow: -2px 3px 5px 0px black;        
     }
-    i:active{        
-        text-shadow: var(--text-shadow-xs);
+    img:active{        
+        box-shadow: 0px 1px 2px 0px black;                
     }
     span {
         font-family: var(--quartiary-font-family);
-        font-size: 2.5vw;
+        font-size: 3vw;
         font-weight: bold;
         color: hsl(0, 0%, 100%);        
         mix-blend-mode: multiply;
         text-shadow: var(--text-shadow-xxs);
-        
     }
 </style>	
