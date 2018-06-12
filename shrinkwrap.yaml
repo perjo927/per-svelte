@@ -7,7 +7,6 @@ devDependencies:
   rollup-plugin-uglify: 3.0.0
   serve: 6.5.8
   svelte: 2.7.2
-  svelte-transitions: 1.2.0
 packages:
   /@types/estree/0.0.38:
     dev: true
@@ -375,10 +374,6 @@ packages:
       node: '>= 4.2.1'
     resolution:
       integrity: sha512-IDbrX6PxqnYy8jV4wSHBaJlErYKTJvW8OQb9F7xivl1iQLqiUYHGa+nZ61Do6+N5uuOn/pReXKNqI9rUn04vug==
-  /eases-jsnext/1.0.10:
-    dev: true
-    resolution:
-      integrity: sha512-1bO1+FIuqtOZpcyoIJuTnw8PU9X+RHHA248mZ1m+CPiiKFGCiNLWecITlhO4DXe7whZmBoJyfKwUoMW0KK5mNw==
   /ee-first/1.1.1:
     dev: true
     resolution:
@@ -1273,37 +1268,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-zjaXglF5nnWpsq470jSv6P9DwPvgLkuapYmfDm3JWOm0vkNTVF2tI4UrN2r6jH1qM/uc/WtxYY1hYoA2dOKj5w==
-  /svelte-transitions-draw/1.0.0:
-    dependencies:
-      eases-jsnext: 1.0.10
-    dev: true
-    resolution:
-      integrity: sha512-yRE/Y8+kN492It7L4xX+WxPI31mO9CJG+asxxjhc8sAY4xf/HwtvY+rPyA/i5J7QqYsZvPoRubiZRHvVrQc5lw==
-  /svelte-transitions-fade/1.0.0:
-    dev: true
-    resolution:
-      integrity: sha1-2+FSDfH1tTcL1hr+/Gfy0v/2MwM=
-  /svelte-transitions-fly/1.0.4:
-    dependencies:
-      eases-jsnext: 1.0.10
-    dev: true
-    resolution:
-      integrity: sha512-OIVVCloqOQZY1GNVMhCP2StWkKrd+FDiZuD/+SSyN+eWhhwaA+C/kfeYGHQMCC0wPsVCPv9fottojPQKeMVdDA==
-  /svelte-transitions-slide/1.0.0:
-    dependencies:
-      eases-jsnext: 1.0.10
-    dev: true
-    resolution:
-      integrity: sha1-FQ3Zy455+p4vJQ4ZjH1plgvyGZQ=
-  /svelte-transitions/1.2.0:
-    dependencies:
-      svelte-transitions-draw: 1.0.0
-      svelte-transitions-fade: 1.0.0
-      svelte-transitions-fly: 1.0.4
-      svelte-transitions-slide: 1.0.0
-    dev: true
-    resolution:
-      integrity: sha512-8KRhNi75bx7Z5s6kJMXv4s8mizwttktm//uA3CvVSBcvwI9tTgq4QXOiYjVRcyQBq/jfLpnnwT19h/WEI7ZF8Q==
   /svelte/2.7.2:
     dev: true
     resolution:
@@ -1433,4 +1397,3 @@ specifiers:
   rollup-plugin-uglify: ^3.0.0
   serve: ^6.5.6
   svelte: ^2.6.0
-  svelte-transitions: ^1.2.0

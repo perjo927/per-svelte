@@ -1,5 +1,5 @@
 <h3>Skills</h3>
-<h4>Do I even code?</h4>
+<h4>Per === 1337</h4>
 
 <ul>
     {#each skillsData as s}
@@ -46,13 +46,15 @@
     h4 {        
         line-height: 1em;           
         font-size: 4.5vw;            
-		color: rebeccapurple;        
+		color: hsla(175, 100%, 10%, 1);		   
         mix-blend-mode: color-burn;
     }
     ul {
         display: grid;
         grid-template-columns: 20% 20% 20% 20%;
         grid-gap: 2em;
+        -webkit-padding-start: 0;
+        padding: 0 1em;
     }
     li {
         list-style-type: none;    
@@ -67,7 +69,7 @@
     }
     .center a {		
 		padding: 0.5em 1em;		
-		background: indianred;
+		background: hsl(0, 70%, 75%); 
 		border-radius: 1.5em;
 		mix-blend-mode: difference;
 		font-size: 3vw;
@@ -80,19 +82,24 @@
 	}
     p {
         font-family: var(--quartiary-font-family);
-        line-height: 0;
+        line-height: 1em;
         font-size: 3vw;
         font-weight: bold;
-        text-shadow: var(--text-shadow-xxs);
+        text-shadow: var(--text-shadow-xs);
+        box-shadow: 0px 0px 0px 5px white;
+        padding: 4px;
         mix-blend-mode: multiply;
         color: hsl(0, 0%, 100%);
-        filter: drop-shadow(0px 0px 0.3em rebeccapurple);
+        filter: drop-shadow(-1px 2px 3px rebeccapurple);
+        min-width: 15vw;
+        text-align: center;
     }
     span {
         font-family: var(--quartiary-font-family);
         font-size: 8.5vw;
         font-weight: bold;
         mix-blend-mode: luminosity;
-        text-shadow: var(--text-shadow)
+        text-shadow: var(--text-shadow-s);
+        filter: drop-shadow(0px 2px 2px black);       
     }
 </style>	
