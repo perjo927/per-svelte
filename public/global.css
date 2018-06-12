@@ -18,8 +18,7 @@
 	--secondary-font-family: "Bungee Outline", cursive;
 	--tertiary-font-family: "Bungee Shade", cursive;
 	--quartiary-font-family: "Open Sans", sans-serif;
-	--quintiary-font-family: serif;
-	--primary-color: hsl(0, 0%, 2%);	/* TODO: blacker? */
+	--primary-color: hsl(0, 0%, 2%);
 	--drop-shadow: drop-shadow(0 0 2em hsla(180, 75%, 50%, 1))
 }
 
@@ -66,9 +65,10 @@ main {
 	align-content: center;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
 	text-align: center;
 	white-space: nowrap;
+	max-width: 100vw;
 }
 h1, h2 {
 	line-height: 0.5em;					
@@ -90,6 +90,12 @@ h2 {
 	/* TODO: theme toggle primary  */	
 	font-family: var(--secondary-font-family);
 }
+h5 {
+	font-family: var(--primary-font-family);		
+	font-family: var(--secondary-font-family);
+	font-family: var(--tertiary-font-family);	
+	font-family: var(--quartiary-font-family);				
+}
 
 a {
 	text-decoration: none;
@@ -101,4 +107,5 @@ a:hover {
 
 .center {
 	text-align: center;
+	max-width: 100vw;
 }

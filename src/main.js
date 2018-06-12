@@ -4,6 +4,7 @@ import Social from './Social.html';
 import Skills from './Skills.html';
 import Work from './Work.html';
 import Education from './Education.html';
+import Recommendations from './Recommendations.html';
 
 import { 
 	aboutData, 
@@ -11,7 +12,8 @@ import {
 	socialData,
 	skillsData,
 	workData,
-	educationData
+	educationData,
+	recommendationsData
 } from './data.js'
 
 export const header = new Header({
@@ -59,5 +61,13 @@ export const education = new Education({
 	data: {
 		educationData,
 		next: ".recommendations"
+	}
+});
+
+export const recommendation = new Recommendations({
+	target: document.querySelector('section.recommendations'),
+	data: {
+		recommendationsData,
+		next: "nav"
 	}
 });

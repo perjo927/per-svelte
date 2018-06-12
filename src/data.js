@@ -73,69 +73,69 @@ export const socialData = [
 export const skillsData = [		
 	{
 		name: "JavaScript",
-		rate: "😀"
+		rate: ["*","*","*","*","*"]
 	},
 	{
 		name: "TypeScript",
-		rate: "😍"
+		rate: ["*","*","*","*"]
 
 	},
 	{
 		name: "HTML",
-		rate: "😆"
+		rate: ["*","*","*","*","*"]
 	},
 	{
 		name: "CSS",
-		rate: "😁"
+		rate: ["*","*","*","*"]
 	},
 	{
 		name: "React",
-		rate: "😊"
+		rate: ["*","*","*"]
 	},
 	{
 		name: "Angular",
-		rate: "😃"
+		rate: ["*","*","*","*"]
 	},
 	{
 		name: "C#",
-		rate: "😎"
+		rate: ["*","*","*"]
 	},
 	{
 		name: ".NET",
-		rate: "😳"
+		rate: ["*","*","*"]
 	},
 	{
 		name: "Python",
-		rate: "😏"
+		rate: ["*","*"]
 	},
 	{
 		name: "Ruby",
-		rate: "😐"
+		rate: ["*","*"]
 	},
 	{
 		name: "Java",
-		rate: "😔"
+		rate: ["*","*"]
 	},
 	{
 		name: "C++",
-		rate: "😟"
+		rate: ["*","*"]
 	},
 	{
 		name: "C",
-		rate: "😛"
+		rate: ["*"]
 	},
 
 	{
 		name: "PHP",
-		rate: "😒"
+		rate: []
 	},
 	{
 		name: "SQL",
-		rate: "😞"
+		rate: ["*"]
 	},
 	{
 		name: "Assembly",
-		rate: "😠"
+		rate: []
 	}
 ];
 
@@ -192,3 +192,31 @@ export const educationData = [
 		info: "Media & Communication"
 	},
 ];
+
+export const recommendationsData = [
+	{
+		name: "Oussama Z.",
+		text: "A man with limitless skills, he always surprises me with his will to approve, his innovative touch, and his reliability. Always enjoyed working along with Per."
+	},
+	{
+		name: "Ludwig H.",
+		text: "Per is a great guy with a real analytic mindset. It was a pleasure working with Per and he provided a lot of value in both the professional aspect and when it comes to creating great team culture."
+	},
+	{
+		name: "David N.",
+		text: "If you want a great developer that also generates great culture to your office, look no further"
+	},
+	{
+		name: "Björg E.",
+		text: "Always on point, trustworthy and a talented coder, a good team player and easy to work with. He also impressing with his super music skills. Per rocks!"
+	},
+	{
+		name: "Hannah B.",
+		text: "Per is one of the most driven, hard-working and sharp person I have worked with."
+	},
+	{
+		name: "Marcus N.",
+		text: "He has a great approach to problem solving, finds creative solutions to tackle what the students think is hard to grasp, and is positive and fun to be with. "
+	}
+	
+]

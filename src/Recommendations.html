@@ -1,21 +1,24 @@
-<h3>Social</h3>
-<h4>Such Social. Much contact.</h4>
+<h3>References</h3>
+<h4>Give Them a Call.</h4>
 
 <ul>
-    {#each socialData as s}
+    {#each recommendationsData as r}
         <li>
             <div>
-                <a class="profile" target="_blank" href={s.link}>
-                    <i class="{s.icon}"></i>
+                <a class="profile" target="_blank" href="https://www.linkedin.com/in/djpjgj/">
+                    <i class="far fa-thumbs-up"></i>
+                    <b>{r.name}</b> 
                 </a>
-                <span>{s.profile}</span>
+                <span>
+                    <q>{r.text}</q>
+                </span>
             </div>
         </li>
     {/each}
 </ul>
 
-<div class="center more">
-    <a on:click='next()'>Find out More</a>
+<div class="center">
+    <a on:click='next()'>Find out Less!</a>
 </div>	
 
 <script>
@@ -29,7 +32,7 @@
 </script>
 
 <style>
-    :global(.social) {
+    :global(.recommendations) {
 	    min-height: 100vh;
     }
     h3 {           
@@ -48,74 +51,78 @@
         mix-blend-mode: color-burn;
     }
     ul {
-        display: grid;        
-        justify-items: center;
-        grid-gap: 1em;                
+        margin: 1em 1em 2em 1em;
         -webkit-padding-start: 0px;        
         list-style-type: none;
-        max-width: 100vw;
     }
     @media (max-width: 499px) {
         ul {
-            grid-template-columns: 45% 45%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
-        a i {
-            font-size: 14vw;
+        li {
+            min-width: 45%;
+            max-width: 90vw;
         }
-        span {
-            font-size: 4.5vw !important;            
+        li div {
+            align-items: center;
         }
     }
     @media (min-width: 500px) {
         ul {        
-            grid-template-columns: 30% 30% 30%;
-            grid-gap: 2em;        
-            margin: 1em 1em 1em 1em;            
+            display: grid;        
+            grid-template-columns: 45% 45%;
+            grid-gap: 2em;
+            justify-items: center;
         }
-    } 
+    }        
     li div {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }   
     .profile {
         line-height: 3.5em;
     }
     .center a {		
-		padding: 0.5em 1em;		
-        background: hsl(0, 70%, 75%);
+        padding: 0.5em 1em;		
+        background: hsl(0, 70%, 75%);        
+		/* background: indianred; */
 		border-radius: 1.5em;
 		mix-blend-mode: difference;
 		font-size: 3vw;
-    }
-    .more {
-        margin-top: 2em;
-        margin-bottom: 2em;        
-    }
+	}
 	.center a:hover {
 		background: orangered;
 	}
 	.center a:visited {
 		background: mediumvioletred;
-	}
+    }
+    b {
+        color: hsl(0, 0%, 100%);        
+        mix-blend-mode: multiply;
+        text-shadow: var(--text-shadow-xxs);   
+    }
     i {
-        font-size: 8vw;     
-        text-shadow: var(--text-shadow);
+        font-size: 5vw;     
+        text-shadow: var(--text-shadow-xxs);
         color: hsl(0, 0%, 100%);
     }
     i:hover{
         transition: all 0.2s;
-        text-shadow: var(--text-shadow-xxs);
+        text-shadow: var(--text-shadow-xs);
     }
     i:active{        
-        text-shadow: var(--text-shadow-xs);
+        text-shadow: var(--text-shadow-xxs);
     }
     span {
         font-family: var(--quartiary-font-family);
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         font-weight: bold;
-        color: hsl(0, 0%, 100%);        
+        font-style: italic;
+        color: hsl(0, 0%, 100%);
         mix-blend-mode: multiply;
-        text-shadow: var(--text-shadow-xxs);
+        text-shadow: var(--text-shadow-xs);
+        filter: drop-shadow(0px 0px 2.5em #555);       
     }
 </style>	
