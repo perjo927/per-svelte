@@ -45,8 +45,8 @@
     }
     h4 {        
         line-height: 1em;           
-        font-size: 4vw;            
-		color: rebeccapurple;        
+        font-size: 4vw;
+		color: hsla(175, 100%, 10%, 1);                
         mix-blend-mode: color-burn;
     }
     ul {        
@@ -72,7 +72,7 @@
     }
     .center a {		
 		padding: 0.5em 1em;		
-		background: indianred;
+		background: hsl(0, 70%, 75%); 
 		border-radius: 1.5em;
 		mix-blend-mode: difference;
 		font-size: 3vw;
@@ -86,14 +86,15 @@
     img {
         border-radius: 50%;
         max-width: 25vw;        
-        box-shadow: -3px 7px 14px 0px black;
+        box-shadow: inset 0px 0px 50px -5px black;   
+        filter: drop-shadow(0px 0px 4px #999);                   
     }
     img:hover{
         transition: all 0.2s;
-        box-shadow: -2px 3px 5px 0px black;        
+        box-shadow: inset 0px 0px 40px -5px black;        
     }
     img:active{        
-        box-shadow: 0px 1px 2px 0px black;                
+        box-shadow: inset 0px 0px 40px -10px black;        
     }
     span {
         font-family: var(--quartiary-font-family);
@@ -101,6 +102,9 @@
         font-weight: bold;
         color: hsl(0, 0%, 100%);        
         mix-blend-mode: multiply;
-        text-shadow: var(--text-shadow-xxs);
+        text-shadow: var(--text-shadow-xs);
+        line-height: 0.5em;        
+        text-shadow: var(--text-shadow-xs);
+        filter: drop-shadow(-1px 1px 2px purple);
     }
 </style>	
