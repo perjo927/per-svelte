@@ -1,14 +1,16 @@
-<h3>Social</h3>
-<h4>Such Social. Much contact.</h4>
+<h3>Education</h3>
+<h4>All my studies is belong to me.</h4>
 
 <ul>
-    {#each socialData as s}
+    {#each educationData as e}
         <li>
             <div>
-                <a class="profile" target="_blank" href={s.link}>
-                    <i class="{s.icon}"></i>
+                <a class="place" target="_blank" href={e.link}>
+                    <picture>                    
+                        <img src="{e.logo}" alt="{e.name}"/>
+                    </picture>
                 </a>
-                <span>{s.profile}</span>
+                <span>{e.info}</span>
             </div>
         </li>
     {/each}
@@ -29,7 +31,7 @@
 </script>
 
 <style>
-    :global(.social) {
+    :global(.education) {
 	    min-height: 100vh;
     }
     h3 {           
@@ -43,13 +45,13 @@
     }
     h4 {        
         line-height: 1em;           
-        font-size: 5vw;            
-		color: hsla(175, 100%, 10%, 1);		 
+        font-size: 4vw;
+		color: hsla(175, 100%, 10%, 1);                
         mix-blend-mode: color-burn;
     }
     ul {        
         display: grid;        
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 45% 45%;
         grid-gap: 2em;
         justify-items: center;
         margin: 3em 1em 1em 1em;
@@ -62,7 +64,7 @@
         flex-direction: column;
         align-items: center;
     }   
-    .profile {
+    .place {
         line-height: 3.5em;
     }
     .center {
@@ -70,7 +72,7 @@
     }
     .center a {		
 		padding: 0.5em 1em;		
-		background: indianred;
+		background: hsl(0, 70%, 75%); 
 		border-radius: 1.5em;
 		mix-blend-mode: difference;
 		font-size: 3vw;
@@ -80,26 +82,29 @@
 	}
 	.center a:visited {
 		background: mediumvioletred;
-	}
-    i {
-        font-size: 8vw;     
-        text-shadow: var(--text-shadow);
-        color: hsl(0, 0%, 100%);
     }
-    i:hover{
+    img {
+        border-radius: 50%;
+        max-width: 25vw;        
+        box-shadow: inset 0px 0px 50px -5px black;   
+        filter: drop-shadow(0px 0px 4px #999);                   
+    }
+    img:hover{
         transition: all 0.2s;
-        text-shadow: var(--text-shadow-xxs);
+        box-shadow: inset 0px 0px 40px -5px black;        
     }
-    i:active{        
-        text-shadow: var(--text-shadow-xs);
+    img:active{        
+        box-shadow: inset 0px 0px 40px -10px black;        
     }
     span {
         font-family: var(--quartiary-font-family);
-        font-size: 2.5vw;
+        font-size: 3vw;
         font-weight: bold;
         color: hsl(0, 0%, 100%);        
         mix-blend-mode: multiply;
-        text-shadow: var(--text-shadow-xxs);
-        
+        text-shadow: var(--text-shadow-xs);
+        line-height: 0.5em;        
+        text-shadow: var(--text-shadow-xs);
+        filter: drop-shadow(-1px 1px 2px purple);
     }
 </style>	

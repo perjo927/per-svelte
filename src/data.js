@@ -18,55 +18,55 @@ export const socialData = [
 		name: "GitHub",
 		link: "https://github.com/perjo927",
 		profile: "perjo927",		
-		meta: "fab fa-github"
+		icon: "fab fa-github"
 	},
 	{
 		name: "LinkedIn",
 		link: "https://www.linkedin.com/in/djpjgj/",
 		profile: "djpjgj",		
-		meta: "fab fa-linkedin"
+		icon: "fab fa-linkedin"
 	},
 	{
 		name: "E-Mail",
 		link: "https://www.gmail.com/",
 		profile: "djpjgj",
-		meta: "far fa-envelope"
+		icon: "far fa-envelope"
 	},
 	{
 		name: "Phone",
 		link: "https://www.google.com/",
 		profile: "Ask me",
-		meta: "fas fa-phone"
+		icon: "fas fa-phone"
 	},
 	{
 		name: "Twitter",
 		link: "https://twitter.com/ProgrammerPer",
 		profile: "ProgrammerPer",
-		meta: "fab fa-twitter"
+		icon: "fab fa-twitter"
 	},
 	{
 		name: "Wordpress",
 		link: "https://programmerper.wordpress.com/",
 		profile: "programmerPer",
-		meta: "fab fa-wordpress"
+		icon: "fab fa-wordpress"
 	},
 	{
 		name: "Medium",
 		link: "https://medium.com/@djpjgj",
 		profile: "Per J.",
-		meta: "fab fa-medium"
+		icon: "fab fa-medium"
     },
     {
 		name: "SoundCloud",
 		link: "https://soundcloud.com/djpjgj/",
 		profile: "djpjgj",
-		meta: "fab fa-soundcloud"
+		icon: "fab fa-soundcloud"
     },
     {
 		name: "CodePen",
 		link: "https://codepen.io/programmerper/",
 		profile: "programmerper",
-		meta: "fab fa-codepen"
+		icon: "fab fa-codepen"
     }    
 ];
 
@@ -106,11 +106,11 @@ export const skillsData = [
 	},
 	{
 		name: "Python",
-		rate: "😇"
+		rate: "😏"
 	},
 	{
 		name: "Ruby",
-		rate: "😏"
+		rate: "😐"
 	},
 	{
 		name: "Java",
@@ -137,4 +137,58 @@ export const skillsData = [
 		name: "Assembly",
 		rate: "😠"
 	}
+];
+
+export const workData = [		
+	{
+		name: "NetEnt",
+		link: "https://www.netent.com",
+		logo: "netent.png",
+		role: "Front-End Developer"
+	},
+	{
+		name: "Betsson",
+		link: "http://www.betssongroup.com",
+		logo: "betsson.png",
+		role: "Web Developer"		
+	},
+	{
+		name: "Ericsson",
+		link: "https://www.ericsson.com",
+		logo: "ericsson.png",
+		role: "Developer"		
+	},
+	{
+		name: "Linköping University",
+		link: "https://www.liu.se",
+		logo: "liu.png",
+		role: "Lab Assistant"		
+	}
+];
+
+export const educationData = [		
+	{
+		name: "Linköping University",
+		link: "https://liu.se/utbildning/program/6kipr",
+		logo: "liu.png",
+		info: "Innovative Programming"
+	},
+	{
+		name: "Linköping University",
+		link: "https://www.liu.se",
+		logo: "liu.png",
+		info: "Music Production"
+	},
+	{
+		name: "Linköping University",
+		link: "https://www.liu.se",
+		logo: "liu.png",
+		info: "Linguistics"
+	},
+	{
+		name: "Linköping University",
+		link: "https://www.liu.se",
+		logo: "liu.png",
+		info: "Media & Communication"
+	},
 ];
