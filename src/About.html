@@ -1,10 +1,11 @@
 <h3>About</h3>
 <h4>Me. Myself. I.</h4>
+
 <p>
 {aboutData}
 </p>
 
-<div class="center">
+<div class="center more">
     <a on:click='next()'>Find out More</a>
 </div>	
 
@@ -35,15 +36,12 @@
     }
     h4 {        
         font-size: 7vw;            
-        color: rebeccapurple;        
+		color: hsla(175, 100%, 10%, 1);           
         mix-blend-mode: color-burn;
-    }
-    .center {
-        margin: 2em;
     }
     a {		
 		padding: 0.5em 1em;		
-		background: indianred;
+		background: hsl(0, 70%, 75%); 
 		border-radius: 1.5em;
 		mix-blend-mode: difference;
 		font-size: 4vw;
@@ -54,14 +52,27 @@
 	a:visited {
 		background: mediumvioletred;
 	}
-    
+    @media (max-width: 599px) {
+        p {
+            font-size: 5.5vw !important;        
+        }
+        .more {
+            margin-top: 3em !important;
+            margin-bottom: 3em !important;            
+        }
+    }    
+    .more {
+        margin-top: 4em;
+        margin-bottom: 4em;            
+    }
     p {
-        color: hsla(0, 0%, 10%, 1);
         font-family: var(--quartiary-font-family);
         filter: drop-shadow(0px 0px 1em rebeccapurple);
         font-size: 3.5vw;
         font-weight: bold;
+        text-align: justify;
         mix-blend-mode: color-burn;
-        margin: 5vw 10vw 5vw 10vw;
+        margin: 5vw 10vw 10vw 10vw;
+        max-width: 80vw;
     }
 </style>	

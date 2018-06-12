@@ -2,7 +2,7 @@
 	<h1>{name}</h1>
 	<h2>{title}</h2>
 	<h3>{subTitle}</h3>
-	<div class="center">
+	<div class="center more">
 		<a on:click='next()'>Get to Know Per</a>
 	</div>	
 </div>
@@ -29,17 +29,14 @@
 
 	h3 {
 		line-height: 1em;		
-		color: rebeccapurple;
+		color: hsla(175, 100%, 10%, 1);        
 		font-size: 3.4vw;			
 		letter-spacing: 0.25em;
 		mix-blend-mode: color-burn;		
 	}
-	.center {
-        margin: 2em;
-    }
 	a {		
 		padding: 0.5em 1em;		
-		background: indianred;
+		background: hsl(0, 70%, 75%); 
 		border-radius: 1.5em;
 		mix-blend-mode: difference;
 		font-size: 3vw;
@@ -50,4 +47,17 @@
 	a:visited {
 		background: mediumvioletred;
 	}
+	@media (max-width: 599px) {
+        p {
+            font-size: 5.5vw !important;        
+        }
+        .more {
+            margin-top: 3em !important;
+            margin-bottom: 3em !important;            
+        }
+    }    
+    .more {
+        margin-top: 5em;
+        margin-bottom: 5em;            
+    }
 </style>	

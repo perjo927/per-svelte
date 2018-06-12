@@ -18,123 +18,205 @@ export const socialData = [
 		name: "GitHub",
 		link: "https://github.com/perjo927",
 		profile: "perjo927",		
-		meta: "fab fa-github"
+		icon: "fab fa-github"
 	},
 	{
 		name: "LinkedIn",
 		link: "https://www.linkedin.com/in/djpjgj/",
 		profile: "djpjgj",		
-		meta: "fab fa-linkedin"
+		icon: "fab fa-linkedin"
 	},
 	{
 		name: "E-Mail",
 		link: "https://www.gmail.com/",
 		profile: "djpjgj",
-		meta: "far fa-envelope"
+		icon: "far fa-envelope"
 	},
 	{
 		name: "Phone",
 		link: "https://www.google.com/",
 		profile: "Ask me",
-		meta: "fas fa-phone"
+		icon: "fas fa-phone"
 	},
 	{
 		name: "Twitter",
 		link: "https://twitter.com/ProgrammerPer",
 		profile: "ProgrammerPer",
-		meta: "fab fa-twitter"
+		icon: "fab fa-twitter"
 	},
 	{
 		name: "Wordpress",
 		link: "https://programmerper.wordpress.com/",
 		profile: "programmerPer",
-		meta: "fab fa-wordpress"
+		icon: "fab fa-wordpress"
 	},
 	{
 		name: "Medium",
 		link: "https://medium.com/@djpjgj",
 		profile: "Per J.",
-		meta: "fab fa-medium"
+		icon: "fab fa-medium"
     },
     {
 		name: "SoundCloud",
 		link: "https://soundcloud.com/djpjgj/",
 		profile: "djpjgj",
-		meta: "fab fa-soundcloud"
+		icon: "fab fa-soundcloud"
     },
     {
 		name: "CodePen",
 		link: "https://codepen.io/programmerper/",
 		profile: "programmerper",
-		meta: "fab fa-codepen"
+		icon: "fab fa-codepen"
     }    
 ];
 
 export const skillsData = [		
 	{
 		name: "JavaScript",
-		rate: "😀"
+		rate: ["*","*","*","*","*"]
 	},
 	{
 		name: "TypeScript",
-		rate: "😍"
+		rate: ["*","*","*","*"]
 
 	},
 	{
 		name: "HTML",
-		rate: "😆"
+		rate: ["*","*","*","*","*"]
 	},
 	{
 		name: "CSS",
-		rate: "😁"
+		rate: ["*","*","*","*"]
 	},
 	{
 		name: "React",
-		rate: "😊"
+		rate: ["*","*","*"]
 	},
 	{
 		name: "Angular",
-		rate: "😃"
+		rate: ["*","*","*","*"]
 	},
 	{
 		name: "C#",
-		rate: "😎"
+		rate: ["*","*","*"]
 	},
 	{
 		name: ".NET",
-		rate: "😳"
+		rate: ["*","*","*"]
 	},
 	{
 		name: "Python",
-		rate: "😇"
+		rate: ["*","*"]
 	},
 	{
 		name: "Ruby",
-		rate: "😏"
+		rate: ["*","*"]
 	},
 	{
 		name: "Java",
-		rate: "😔"
+		rate: ["*","*"]
 	},
 	{
 		name: "C++",
-		rate: "😟"
+		rate: ["*","*"]
 	},
 	{
 		name: "C",
-		rate: "😛"
+		rate: ["*"]
 	},
 
 	{
 		name: "PHP",
-		rate: "😒"
+		rate: []
 	},
 	{
 		name: "SQL",
-		rate: "😞"
+		rate: ["*"]
 	},
 	{
 		name: "Assembly",
-		rate: "😠"
+		rate: []
 	}
 ];
+
+export const workData = [		
+	{
+		name: "NetEnt",
+		link: "https://www.netent.com",
+		logo: "netent.png",
+		role: "Front-End Developer"
+	},
+	{
+		name: "Betsson",
+		link: "http://www.betssongroup.com",
+		logo: "betsson.png",
+		role: "Web Developer"		
+	},
+	{
+		name: "Ericsson",
+		link: "https://www.ericsson.com",
+		logo: "ericsson.png",
+		role: "Developer"		
+	},
+	{
+		name: "Linköping University",
+		link: "https://www.liu.se",
+		logo: "liu.png",
+		role: "Lab Assistant"		
+	}
+];
+
+export const educationData = [		
+	{
+		name: "Linköping University",
+		link: "https://liu.se/utbildning/program/6kipr",
+		logo: "liu.png",
+		info: "Innovative Programming"
+	},
+	{
+		name: "Linköping University",
+		link: "https://www.liu.se",
+		logo: "liu.png",
+		info: "Music Production"
+	},
+	{
+		name: "Linköping University",
+		link: "https://www.liu.se",
+		logo: "liu.png",
+		info: "Linguistics"
+	},
+	{
+		name: "Linköping University",
+		link: "https://www.liu.se",
+		logo: "liu.png",
+		info: "Media & Communication"
+	},
+];
+
+export const recommendationsData = [
+	{
+		name: "Oussama Z.",
+		text: "A man with limitless skills, he always surprises me with his will to approve, his innovative touch, and his reliability. Always enjoyed working along with Per."
+	},
+	{
+		name: "Ludwig H.",
+		text: "Per is a great guy with a real analytic mindset. It was a pleasure working with Per and he provided a lot of value in both the professional aspect and when it comes to creating great team culture."
+	},
+	{
+		name: "David N.",
+		text: "If you want a great developer that also generates great culture to your office, look no further"
+	},
+	{
+		name: "Björg E.",
+		text: "Always on point, trustworthy and a talented coder, a good team player and easy to work with. He also impressing with his super music skills. Per rocks!"
+	},
+	{
+		name: "Hannah B.",
+		text: "Per is one of the most driven, hard-working and sharp person I have worked with."
+	},
+	{
+		name: "Marcus N.",
+		text: "He has a great approach to problem solving, finds creative solutions to tackle what the students think is hard to grasp, and is positive and fun to be with. "
+	}
+	
+]
