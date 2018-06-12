@@ -68,6 +68,6 @@ export const recommendation = new Recommendations({
 	target: document.querySelector('section.recommendations'),
 	data: {
 		recommendationsData,
-		next: "nav"
+		next: "body"
 	}
 });

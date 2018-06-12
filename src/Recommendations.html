@@ -17,7 +17,7 @@
     {/each}
 </ul>
 
-<div class="center">
+<div class="center more">
     <a on:click='next()'>Find out Less!</a>
 </div>	
 
@@ -40,7 +40,6 @@
         font-size: 11vw;    
         font-family: var(--primary-font-family);
         text-shadow: var(--text-shadow);
-        mix-blend-mode: difference;
         mix-blend-mode: exclusion;		        
 		filter: var(--drop-shadow);        
     }
@@ -52,14 +51,14 @@
     }
     ul {
         margin: 1em 1em 2em 1em;
-        -webkit-padding-start: 0px;        
         list-style-type: none;
     }
-    @media (max-width: 499px) {
+    @media (max-width: 599px) {
         ul {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            -webkit-padding-start: 0px;                
         }
         li {
             min-width: 45%;
@@ -68,15 +67,28 @@
         li div {
             align-items: center;
         }
+        span {
+            margin-bottom: 2em;
+        }
+        .profile {
+            line-height: 2em !important;
+        }
+        .more {
+            margin-top: 0 !important;
+            line-height: 0;
+        }
     }
-    @media (min-width: 500px) {
+    @media (min-width: 600px) {
         ul {        
             display: grid;        
             grid-template-columns: 45% 45%;
             grid-gap: 2em;
-            justify-items: center;
         }
     }        
+    .more {
+        margin-top: 4em;
+        margin-bottom: 4em;        
+    }
     li div {
         display: flex;
         flex-direction: column;
@@ -101,7 +113,8 @@
     b {
         color: hsl(0, 0%, 100%);        
         mix-blend-mode: multiply;
-        text-shadow: var(--text-shadow-xxs);   
+        text-shadow: var(--text-shadow-xxs);  
+        font-size: 4vw; 
     }
     i {
         font-size: 5vw;     
