@@ -6,6 +6,13 @@ export const headerData = {
 	subTitle: "I Can Haz Front-End Skills"
 };
 
+export const aboutData = `
+I am Per. I am a programmer. 
+I like to work with web technologies, to create and innovate.
+Curiousity drives me forward, discipline keeps me focused. I care about quality while delivering continously.
+Team player with an agile mindset. Passion for music, good food, pool and gymnastics.
+`;
+
 export const socialData = [		
 	{
 		name: "GitHub",
@@ -16,7 +23,7 @@ export const socialData = [
 	{
 		name: "LinkedIn",
 		link: "https://www.linkedin.com/in/djpjgj/",
-		profile: "djpjgj",
+		profile: "djpjgj",		
 		meta: "fab fa-linkedin"
 	},
 	{
@@ -63,9 +70,71 @@ export const socialData = [
     }    
 ];
 
-export const aboutData = `
-I am Per. I am a programmer. 
-I like to work with web technologies, to create and innovate.
-Curiousity drives me forward, discipline keeps me focused. I care about quality while delivering continously.
-Team player with an agile mindset. Passion for music, good food, pool and gymnastics.
-`;
+export const skillsData = [		
+	{
+		name: "JavaScript",
+		rate: "😀"
+	},
+	{
+		name: "TypeScript",
+		rate: "😍"
+
+	},
+	{
+		name: "HTML",
+		rate: "😆"
+	},
+	{
+		name: "CSS",
+		rate: "😁"
+	},
+	{
+		name: "React",
+		rate: "😊"
+	},
+	{
+		name: "Angular",
+		rate: "😃"
+	},
+	{
+		name: "C#",
+		rate: "😎"
+	},
+	{
+		name: ".NET",
+		rate: "😳"
+	},
+	{
+		name: "Python",
+		rate: "😇"
+	},
+	{
+		name: "Ruby",
+		rate: "😏"
+	},
+	{
+		name: "Java",
+		rate: "😔"
+	},
+	{
+		name: "C++",
+		rate: "😟"
+	},
+	{
+		name: "C",
+		rate: "😛"
+	},
+
+	{
+		name: "PHP",
+		rate: "😒"
+	},
+	{
+		name: "SQL",
+		rate: "😞"
+	},
+	{
+		name: "Assembly",
+		rate: "😠"
+	}
+];

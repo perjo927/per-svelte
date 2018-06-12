@@ -1,14 +1,16 @@
-<h3>Social</h3>
-<h4>Such Social. Much contact.</h4>
+<h3>Skills</h3>
+<h4>Do I even code?</h4>
 
 <ul>
-    {#each socialData as s}
+    {#each skillsData as s}
         <li>
             <div>
-                <a class="profile" target="_blank" href={s.link}>
-                    <i class="{s.meta}"></i>
-                </a>
-                <span>{s.profile}</span>
+                <p class="skill">
+                    {s.name}
+                </p>
+                <span>
+                    {s.rate}
+                </span>
             </div>
         </li>
     {/each}
@@ -29,7 +31,7 @@
 </script>
 
 <style>
-    :global(.social) {
+    :global(.skills) {
 	    min-height: 100vh;
     }
     h3 {           
@@ -43,28 +45,23 @@
     }
     h4 {        
         line-height: 1em;           
-        font-size: 5vw;            
+        font-size: 4.5vw;            
 		color: rebeccapurple;        
         mix-blend-mode: color-burn;
     }
-    ul {        
-        display: grid;        
-        grid-template-columns: 30% 30% 30%;
+    ul {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
         grid-gap: 2em;
-        justify-items: center;
-        margin: 3em 1em 1em 1em;
-        -webkit-padding-start: 0px;        
-        list-style-type: none;
     }
-    
+    li {
+        list-style-type: none;    
+    }     
     li div {
         display: flex;
         flex-direction: column;
         align-items: center;
     }   
-    a.profile {
-        line-height: 3.5em;
-    }
     .center {
         margin: 3.5em;
     }
@@ -81,25 +78,21 @@
 	.center a:visited {
 		background: mediumvioletred;
 	}
-    i {
-        font-size: 8vw;     
-        text-shadow: var(--text-shadow);
-        color: hsl(0, 0%, 100%);
-    }
-    i:hover{
-        transition: all 0.2s;
+    p {
+        font-family: var(--quartiary-font-family);
+        line-height: 0;
+        font-size: 3vw;
+        font-weight: bold;
         text-shadow: var(--text-shadow-xxs);
-    }
-    i:active{        
-        text-shadow: var(--text-shadow-xs);
+        mix-blend-mode: multiply;
+        color: hsl(0, 0%, 100%);
+        filter: drop-shadow(0px 0px 0.3em rebeccapurple);
     }
     span {
         font-family: var(--quartiary-font-family);
-        font-size: 2.5vw;
+        font-size: 8.5vw;
         font-weight: bold;
-        color: hsl(0, 0%, 100%);        
-        mix-blend-mode: multiply;
-        text-shadow: var(--text-shadow-xxs);
-        
+        mix-blend-mode: luminosity;
+        text-shadow: var(--text-shadow)
     }
 </style>	
