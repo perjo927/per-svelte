@@ -1,4 +1,5 @@
 <button 
+    id="next-theme"
     on:click='nextTheme()'
     onclick='document.getElementById("click2").play(); document.getElementById("click2").currentTime=0;'
 >
@@ -67,6 +68,7 @@
 
 <style>
     button {
+        visibility: hidden;
         font-family: var(--quartiary-font-family);
         font-weight: bold;
         color: white;

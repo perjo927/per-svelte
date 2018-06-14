@@ -77,7 +77,8 @@ h1, h2, h3, h4, h5 {
 h1, h2 {
 	line-height: 0.5em;					
 	animation-name: intro;
-	animation-duration: 5s;
+	animation-delay: 4s;
+	animation-duration: 2.5s;
 	animation-fill-mode: forwards;
 	mix-blend-mode: difference;
 }
@@ -100,6 +101,10 @@ h5 {
     margin-top: 0;
     letter-spacing: 0.5em;
     filter: drop-shadow(0px 0px 1px black);		
+}
+
+#loader {
+	min-height: 100vh;
 }
 
 nav {
