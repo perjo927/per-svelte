@@ -1,4 +1,10 @@
-<button on:click='nextTheme()'>CHANGE MOOD</button>
+<button 
+    id="next-theme"
+    on:click='nextTheme()'
+    onclick='document.getElementById("click2").play(); document.getElementById("click2").currentTime=0;'
+>
+    CHANGE MOOD
+</button>
 
 <script>
     let backgrounds = [
@@ -62,6 +68,7 @@
 
 <style>
     button {
+        visibility: hidden;
         font-family: var(--quartiary-font-family);
         font-weight: bold;
         color: white;
@@ -75,7 +82,8 @@
     }
     button:hover {
         background: white;
-        box-shadow: -1px 1px 4px 0px black;        
+        box-shadow: -1px 1px 4px 0px black;
+        filter: drop-shadow(1px 1px 5px black);  
     }
     button:active {
         background: white;
