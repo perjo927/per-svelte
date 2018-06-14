@@ -3,7 +3,12 @@
 	<h2>{title}</h2>
 	<h3>{subTitle}</h3>
 	<div class="center more">
-		<a on:click='next()'>Get to Know Per</a>
+		<a 
+			on:click='next()'
+			onclick='document.getElementById("click").play(); document.getElementById("click").currentTime=0;'
+		>
+		Get to Know Per
+		</a>
 	</div>	
 </div>
 

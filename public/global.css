@@ -9,7 +9,7 @@
 	--text-shadow-s: 0px 1px 3px #bbb, 0px 2px 2px #aaa, 0px 3px 1px #999, 0px 4px 0px #888, 0px 5px 0px #777, 0px 6px 0px #333; 	
 	--text-shadow-xs: 0px 1px 3px #bbb, 0px 2px 2px #333; 		
 	--text-shadow-xxs: 0px 0px 3px #222, 0px 1px 6px #000; 			
-	--bg-url: url("w1.png");
+	--bg-url: url("./images/w1.png");
 	--linear-gradient-circle-blue: radial-gradient(circle, hsla(190, 100%, 75%, 1), hsl(190, 95%, 65%), hsla(195, 100%, 50%, 1));
 	--linear-gradient-circle-pink: radial-gradient(circle, hsla(300, 100%, 80%, 1), hsla(320, 100%, 50%, 1), hsla(315, 100%, 50%, 1));
 	--linear-gradient-circle-white: radial-gradient(circle, hsl(0, 0%, 91%), hsl(0, 0%, 100%), hsl(50, 38%, 94%));
@@ -33,6 +33,9 @@
 		text-shadow: var(--text-shadow);
 		letter-spacing: 0;		
 	}
+}
+audio {
+	box-shadow: -2px 2px 6px solid black;
 }
 
 html {
@@ -101,10 +104,17 @@ h5 {
 
 nav {
 	position: absolute;
+	cursor: pointer;	
 	top: 13vh;
 	left: 36vw;
 }
 
+@media (min-width: 1200px) {
+	nav {
+		top: 13vh;
+		left: 40vw;
+	}
+}
 
 a {
 	text-decoration: none;

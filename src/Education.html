@@ -5,9 +5,11 @@
     {#each educationData as e}
         <li>
             <div>
-                <a class="place" target="_blank" href={e.link}>
+                <a  class="place" target="_blank" href={e.link}
+                    onclick='document.getElementById("click3").play(); document.getElementById("click3").currentTime=0;'        
+                >
                     <picture>                    
-                        <img src="{e.logo}" alt="{e.name}"/>
+                        <img src="./images/{e.logo}" alt="{e.name}"/>
                     </picture>
                 </a>
                 <span>{e.info}</span>
@@ -17,7 +19,12 @@
 </ul>
 
 <div class="center more">
-    <a on:click='next()'>Find out More</a>
+    <a 
+        on:click='next()'
+    	onclick='document.getElementById("click").play(); document.getElementById("click").currentTime=0;'        
+    >
+        Find out More
+    </a>
 </div>	
 
 <script>
