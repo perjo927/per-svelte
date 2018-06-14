@@ -5,7 +5,9 @@
     {#each socialData as s}
         <li>
             <div>
-                <a class="profile" target="_blank" href={s.link}>
+                <a  class="profile" target="_blank" href={s.link} 
+                    onclick='document.getElementById("click3").play(); document.getElementById("click3").currentTime=0;'        
+                >
                     <i class="{s.icon}"></i>
                 </a>
                 <span>{s.profile}</span>
@@ -15,7 +17,12 @@
 </ul>
 
 <div class="center more">
-    <a on:click='next()'>Find out More</a>
+    <a 
+        on:click='next()'
+    	onclick='document.getElementById("click").play(); document.getElementById("click").currentTime=0;'        
+    >
+        Find out More
+    </a>
 </div>	
 
 <script>

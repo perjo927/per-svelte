@@ -5,9 +5,11 @@
     {#each workData as w}
         <li>
             <div>
-                <a class="company" target="_blank" href={w.link}>
+                <a  class="company" target="_blank" href={w.link}
+                    onclick='document.getElementById("click3").play(); document.getElementById("click3").currentTime=0;'        
+                >
                     <picture>                    
-                        <img src="{w.logo}" alt="{w.name}"/>
+                        <img src="./images/{w.logo}" alt="{w.name}"/>
                     </picture>
                 </a>
                 <span>{w.role}</span>
@@ -17,7 +19,12 @@
 </ul>
 
 <div class="center more">
-    <a on:click='next()'>Find out More</a>
+    <a 
+        on:click='next()'
+    	onclick='document.getElementById("click").play(); document.getElementById("click").currentTime=0;'        
+    >
+        Find out More
+    </a>
 </div>	
 
 <script>

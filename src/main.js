@@ -1,3 +1,4 @@
+import Loader from './Loader.html';
 import Header from './Header.html';
 import About from './About.html';
 import Social from './Social.html';
@@ -16,6 +17,18 @@ import {
 	educationData,
 	recommendationsData
 } from './data.js'
+
+export const loader = new Loader({
+	target: document.querySelector('#loader'),
+	data: {}
+});
+
+loader.on('destroy', () => {
+	const el = document.getElementById("loader");
+	el.parentNode.removeChild(el);
+	const themeSwitcher = document.getElementById("next-theme");
+	themeSwitcher.style.visibility = "visible";
+});
 
 export const header = new Header({
 	target: document.querySelector('header'),

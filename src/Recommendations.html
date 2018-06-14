@@ -5,7 +5,9 @@
     {#each recommendationsData as r}
         <li>
             <div>
-                <a class="profile" target="_blank" href="https://www.linkedin.com/in/djpjgj/">
+                <a  class="profile" target="_blank" href="https://www.linkedin.com/in/djpjgj/"
+                    onclick='document.getElementById("click3").play(); document.getElementById("click3").currentTime=0;'        
+                >
                     <i class="far fa-thumbs-up"></i>
                     <b>{r.name}</b> 
                 </a>
@@ -18,7 +20,12 @@
 </ul>
 
 <div class="center more">
-    <a on:click='next()'>Find out Less!</a>
+    <a 
+        on:click='next()'
+    	onclick='document.getElementById("click2").play(); document.getElementById("click2").currentTime=0;'        
+    >
+        Find out Less!
+    </a>
 </div>	
 
 <script>
