@@ -10,9 +10,11 @@
 	--text-shadow-xs: 0px 1px 3px #bbb, 0px 2px 2px #333; 		
 	--text-shadow-xxs: 0px 0px 3px #222, 0px 1px 6px #000; 			
 	--bg-url: url("w1.png");
-	--linear-gradient-circle-blue: radial-gradient(circle, hsl(160, 100%, 80%), hsl(180, 75%, 50%),  hsl(175, 100%, 50%));
+	--linear-gradient-circle-blue: radial-gradient(circle, hsla(190, 100%, 75%, 1), hsl(190, 95%, 65%), hsla(195, 100%, 50%, 1));
 	--linear-gradient-circle-pink: radial-gradient(circle, hsla(300, 100%, 80%, 1), hsla(320, 100%, 50%, 1), hsla(315, 100%, 50%, 1));
+	--linear-gradient-circle-white: radial-gradient(circle, hsl(0, 0%, 91%), hsl(0, 0%, 100%), hsl(50, 38%, 94%));
 	--filter-1: hue-rotate(120deg) blur(0.4px) grayscale(50%) opacity(75%) saturate(1) sepia(10%);
+	--filter-2: hue-rotate(0deg) blur(0.4px) grayscale(75%) opacity(75%) saturate(1) sepia(10%);	
 	--primary-font-size: 18px;
 	--primary-font-family: "Bungee Inline", cursive;
 	--secondary-font-family: "Bungee Outline", cursive;
@@ -56,7 +58,6 @@ body {
 	color: var(--primary-color);	
 	background-image: var(--bg-url);
 	background-repeat: repeat;	
-	/* TODO: theme toggle */
 	filter: var(--filter-1);    
 }
 
@@ -75,19 +76,15 @@ h1, h2 {
 	animation-name: intro;
 	animation-duration: 5s;
 	animation-fill-mode: forwards;
-	/* TODO: theme toggle */			
-	mix-blend-mode: color-burn;		
 	mix-blend-mode: difference;
 }
 h1 {
-	/* TODO: theme toggle primary */	
 	font-family: var(--tertiary-font-family);
 	filter: var(--drop-shadow);
 	font-size: 9vw;
 }
 h2 {
 	font-size: 6vw;	
-	/* TODO: theme toggle primary  */	
 	font-family: var(--secondary-font-family);
 }
 h5 {
@@ -101,6 +98,13 @@ h5 {
     letter-spacing: 0.5em;
     filter: drop-shadow(0px 0px 1px black);		
 }
+
+nav {
+	position: absolute;
+	top: 13vh;
+	left: 36vw;
+}
+
 
 a {
 	text-decoration: none;

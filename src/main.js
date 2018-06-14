@@ -5,6 +5,7 @@ import Skills from './Skills.html';
 import Work from './Work.html';
 import Education from './Education.html';
 import Recommendations from './Recommendations.html';
+import ThemeSwitcher from './ThemeSwitcher.html';
 
 import { 
 	aboutData, 
@@ -22,6 +23,11 @@ export const header = new Header({
 		...headerData,
 		next: ".about"
 	}
+});
+
+export const themeSwitcher = new ThemeSwitcher({
+	target: document.querySelector('nav'),
+	data: {}
 });
 
 export const about = new About({
