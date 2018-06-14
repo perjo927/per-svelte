@@ -1,4 +1,4 @@
-const next = function() {
+export default function next() {
     const { next } = this.get();
     const nextElement = document.querySelector(next);
     nextElement.scrollIntoView({
@@ -6,6 +6,4 @@ const next = function() {
         block: "start", 
         inline: "start"
     });
-}
-
-export default next;
+};
