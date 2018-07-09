@@ -8,8 +8,8 @@ import Education from './Education.html';
 import Recommendations from './Recommendations.html';
 import ThemeSwitcher from './ThemeSwitcher.html';
 
-import { 
-	aboutData, 
+import {
+	aboutData,
 	headerData,
 	socialData,
 	skillsData,
@@ -33,7 +33,7 @@ loader.on('destroy', () => {
 export const header = new Header({
 	target: document.querySelector('header'),
 	data: {
-		...headerData,
+		headerData,
 		next: ".about"
 	}
 });
