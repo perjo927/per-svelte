@@ -5,16 +5,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 :root {
-	--text-shadow: 0px 1px 3px #bbb, 0px 2px 2px #aaa, 0px 3px 1px #999, 0px 4px 0px #888, 0px 5px 0px #777, 0px 6px 0px #666, 0px 7px 0px #555, 0px 9px 5px #444, 0px 10px 20px #555; 
-	--text-shadow-s: 0px 1px 3px #bbb, 0px 2px 2px #aaa, 0px 3px 1px #999, 0px 4px 0px #888, 0px 5px 0px #777, 0px 6px 0px #333; 	
-	--text-shadow-xs: 0px 1px 3px #bbb, 0px 2px 2px #333; 		
-	--text-shadow-xxs: 0px 0px 3px #222, 0px 1px 6px #000; 			
+	--text-shadow: 0px 1px 3px #bbb, 0px 2px 2px #aaa, 0px 3px 1px #999, 0px 4px 0px #888, 0px 5px 0px #777, 0px 6px 0px #666, 0px 7px 0px #555, 0px 9px 5px #444, 0px 10px 20px #555;
+	--text-shadow-s: 0px 1px 3px #bbb, 0px 2px 2px #aaa, 0px 3px 1px #999, 0px 4px 0px #888, 0px 5px 0px #777, 0px 6px 0px #333;
+	--text-shadow-xs: 0px 1px 3px #bbb, 0px 2px 2px #333;
+	--text-shadow-xxs: 0px 0px 3px #222, 0px 1px 6px #000;
 	--bg-url: url("./images/w1.png");
 	--linear-gradient-circle-blue: radial-gradient(circle, hsla(190, 100%, 75%, 1), hsl(190, 95%, 65%), hsla(195, 100%, 50%, 1));
 	--linear-gradient-circle-pink: radial-gradient(circle, hsla(300, 100%, 80%, 1), hsla(320, 100%, 50%, 1), hsla(315, 100%, 50%, 1));
 	--linear-gradient-circle-white: radial-gradient(circle, hsl(0, 0%, 91%), hsl(0, 0%, 100%), hsl(50, 38%, 94%));
-	--filter-1: hue-rotate(120deg) blur(0.4px) grayscale(50%) opacity(75%) saturate(1) sepia(10%);
-	--filter-2: hue-rotate(0deg) blur(0.4px) grayscale(75%) opacity(75%) saturate(1) sepia(10%);	
+	--filter-1: hue-rotate(120deg) grayscale(50%) opacity(75%) saturate(1) sepia(10%);
+	--filter-2: hue-rotate(0deg) grayscale(75%) opacity(75%) saturate(1) sepia(10%);
 	--primary-font-size: 18px;
 	--primary-font-family: "Bungee Inline", cursive;
 	--secondary-font-family: "Bungee Outline", cursive;
@@ -27,11 +27,11 @@
 @keyframes intro {
 	0% {
 		text-shadow: 0px 1px 2px #111;
-		letter-spacing: 1em;		
+		letter-spacing: 1em;
 	}
 	100% {
 		text-shadow: var(--text-shadow);
-		letter-spacing: 0;		
+		letter-spacing: 0;
 	}
 }
 audio {
@@ -49,19 +49,19 @@ html, body {
 	overflow-x: hidden;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
 	margin: 0;
 	box-sizing: border-box;
 	font-size: var(--primary-font-size);
-	font-family: var(--primary-font-family);	
-	color: var(--primary-color);	
+	font-family: var(--primary-font-family);
+	color: var(--primary-color);
 	background-image: var(--bg-url);
-	background-repeat: repeat;	
-	filter: var(--filter-1);    
+	background-repeat: repeat;
+	filter: var(--filter-1);
 }
 
 main {
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5 {
 	max-width: 100vw;
 }
 h1, h2 {
-	line-height: 0.5em;					
+	line-height: 0.5em;
 	animation-name: intro;
 	animation-delay: 4s;
 	animation-duration: 2.5s;
@@ -88,7 +88,7 @@ h1 {
 	font-size: 9vw;
 }
 h2 {
-	font-size: 6vw;	
+	font-size: 6vw;
 	font-family: var(--secondary-font-family);
 }
 h5 {
@@ -100,7 +100,7 @@ h5 {
     line-height: 1.5em;
     margin-top: 0;
     letter-spacing: 0.5em;
-    filter: drop-shadow(0px 0px 1px black);		
+    filter: drop-shadow(0px 0px 1px black);
 }
 
 #loader {
@@ -109,7 +109,7 @@ h5 {
 
 nav {
 	position: absolute;
-	cursor: pointer;	
+	cursor: pointer;
 	top: 13vh;
 	left: 36vw;
 }
