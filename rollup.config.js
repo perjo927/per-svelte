@@ -3,13 +3,14 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import buble from 'rollup-plugin-buble';
 import uglify from 'rollup-plugin-uglify';
+import babel from 'rollup-plugin-babel';
 
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
 	input: 'src/main.js',
 	output: {
-		sourcemap: true,
+		sourcemap: !production,
 		format: 'iife',
 		name: 'app',
 		file: 'public/bundle.js'
@@ -27,6 +28,10 @@ export default {
 			css: css => {
 				css.write('public/bundle.css');
 			}
+		}),
+
+		babel({
+			exclude: 'node_modules/**'
 		}),
 
 		// If you have external dependencies installed from

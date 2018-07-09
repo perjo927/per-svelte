@@ -1,20 +1,20 @@
 <div>
-	<h1>{name}</h1>
-	<h2>{title}</h2>
-	<h3>{subTitle}</h3>
+	<h1>{headerData.name}</h1>
+	<h2>{headerData.title}</h2>
+	<h3>{headerData.subTitle}</h3>
 	<div class="center more">
-		<a 
+		<a
 			on:click='next()'
 			onclick='document.getElementById("click").play(); document.getElementById("click").currentTime=0;'
 		>
 		Get to Know Per
 		</a>
-	</div>	
+	</div>
 </div>
 
-<script>	
+<script>
 	import next from "./utils.js"
-	
+
 	export default {
 		methods: {
 			next: next
@@ -26,22 +26,22 @@
 	:global(header) {
 		display: grid;
 		align-items: center;
-		min-height: 100vh;	
+		min-height: 100vh;
 	}
 	h1, h2, h3 {
-		transition: all 0.2s;		
+		transition: all 0.2s;
 	}
 
 	h3 {
-		line-height: 1em;		
-		color: hsla(175, 100%, 10%, 1);        
-		font-size: 3.4vw;			
+		line-height: 1em;
+		color: hsla(175, 100%, 10%, 1);
+		font-size: 3.4vw;
 		letter-spacing: 0.25em;
-		mix-blend-mode: color-burn;		
+		mix-blend-mode: color-burn;
 	}
-	a {		
-		padding: 0.5em 1em;		
-		background: hsl(0, 70%, 75%); 
+	a {
+		padding: 0.5em 1em;
+		background: hsl(0, 70%, 75%);
 		border-radius: 1.5em;
 		mix-blend-mode: difference;
 		font-size: 3vw;
@@ -55,11 +55,11 @@
 	@media (max-width: 599px) {
         .more {
             margin-top: 3em !important;
-            margin-bottom: 3em !important;            
+            margin-bottom: 3em !important;
         }
-    }    
+    }
     .more {
         margin-top: 5em;
-        margin-bottom: 5em;            
+        margin-bottom: 5em;
     }
-</style>	
+</style>
