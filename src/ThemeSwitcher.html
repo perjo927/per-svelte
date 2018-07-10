@@ -1,4 +1,4 @@
-<button 
+<button
     id="next-theme"
     on:click='nextTheme()'
     onclick='document.getElementById("click2").play(); document.getElementById("click2").currentTime=0;'
@@ -29,7 +29,7 @@
         methods: {
             nextTheme: function() {
 
-                const background = backgrounds.shift(); 
+                const background = backgrounds.shift();
                 backgrounds.push(background);
 
                 const filter = filters.shift();
@@ -43,7 +43,7 @@
                     .documentElement
                     .style
                     .background = background;
-                
+
                 window
                     .document
                     .body
@@ -74,9 +74,8 @@
         font-weight: bold;
         color: white;
         text-shadow: var(--text-shadow-xs);
-        font-size: 3vw;   
+        font-size: 2.5vw;
         cursor: pointer;
-        padding: 1vw 1vw;
         box-shadow: -2px 2px 6px 0px black;
         border-radius: 1px;
         mix-blend-mode: multiply;
@@ -84,15 +83,15 @@
     button:hover {
         background: white;
         box-shadow: -1px 1px 4px 0px black;
-        filter: drop-shadow(1px 1px 5px black);  
+        filter: drop-shadow(1px 1px 5px black);
     }
     button:active {
         background: white;
-        box-shadow: 0px 0px 2px 0px black;        
+        box-shadow: 0px 0px 2px 0px black;
     }
     @media (min-width: 1200px) {
         button {
-            font-size: 1vw;   
+            font-size: 1vw;
         }
-    }  
+    }
 </style>

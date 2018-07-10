@@ -110,14 +110,13 @@ h5 {
 nav {
 	position: absolute;
 	cursor: pointer;
-	top: 13vh;
-	left: 36vw;
+	top: 10vh;
+	left: 37vw;
 }
 
 @media (min-width: 1200px) {
 	nav {
-		top: 13vh;
-		left: 40vw;
+		left: 45vw;
 	}
 }
 
